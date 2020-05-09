@@ -20,6 +20,13 @@ const run = async () => {
 
   console.log("->> Generating markdown…");
   const markdown = await generateMarkdownReport(results);
+  console.log("::set-output name=calibre_markdown::" + markdown)
+
+  // If compress only mode, then we're done
+  if (compressOnly) {
+    console.log("->> compressOnly was set. Stopping.");
+    return results;
+  }
 
   console.log("->> Committing files…");
   await createCommit(optimisedImages);

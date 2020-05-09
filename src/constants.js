@@ -16,6 +16,8 @@ const WEBP_QUALITY = parseInt(process.env["INPUT_WEBPQUALITY"]) || 80;
 const IGNORE_PATHS = process.env["INPUT_IGNOREPATHS"]
   ? process.env["INPUT_IGNOREPATHS"].split(",")
   : ["node_modules/**"];
+const COMPRESS_ONLY = process.env["INPUT_COMPRESSONLY"] || false;
+const MARKDOWN_PARAM = process.env["OUTPUT_MARKDOWNPARAM"] || "calibre_markdown";
 
 const COMMITTER = {
   name: "Calibre",
@@ -53,5 +55,7 @@ module.exports = {
   JPEG_QUALITY,
   PNG_QUALITY,
   WEBP_QUALITY,
-  IGNORE_PATHS
+  IGNORE_PATHS,
+  COMPRESS_ONLY,
+  MARKDOWN_PARAM
 };

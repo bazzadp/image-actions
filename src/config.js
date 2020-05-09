@@ -6,7 +6,9 @@ const { CONFIG_PATH,
   JPEG_QUALITY,
   PNG_QUALITY,
   WEBP_QUALITY,
-  IGNORE_PATHS
+  IGNORE_PATHS,
+  COMPRESS_ONLY,
+  MARKDOWN_PARAM
 } = require("./constants");
 
 const getYamlConfig = async () => {
@@ -23,7 +25,9 @@ const getConfig = async () => {
     jpeg: { quality: JPEG_QUALITY },
     png: { quality: PNG_QUALITY },
     webp: { quality: WEBP_QUALITY },
-    ignorePaths: IGNORE_PATHS
+    ignorePaths: IGNORE_PATHS,
+    compressOnly: COMPRESS_ONLY,
+    markdownParam: MARKDOWN_PARAM
   };
 
   const ymlConfig = await getYamlConfig();
