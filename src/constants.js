@@ -17,7 +17,6 @@ const IGNORE_PATHS = process.env["INPUT_IGNOREPATHS"]
   ? process.env["INPUT_IGNOREPATHS"].split(",")
   : ["node_modules/**"];
 const COMPRESS_ONLY = process.env["INPUT_COMPRESSONLY"] || false;
-const MARKDOWN_PARAM = process.env["OUTPUT_MARKDOWNPARAM"] || "calibre_markdown";
 
 const COMMITTER = {
   name: "Calibre",

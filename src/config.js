@@ -26,8 +26,7 @@ const getConfig = async () => {
     png: { quality: PNG_QUALITY },
     webp: { quality: WEBP_QUALITY },
     ignorePaths: IGNORE_PATHS,
-    compressOnly: COMPRESS_ONLY,
-    markdownParam: MARKDOWN_PARAM
+    compressOnly: COMPRESS_ONLY
   };
 
   const ymlConfig = await getYamlConfig();
