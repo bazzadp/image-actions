@@ -2,6 +2,8 @@
 //const processImages = require("./image-processing");
 //const createComment = require("./github-pr-comment");
 //const createCommit = require("./github-commit");
+const getConfig = require("./config");
+const config = await getConfig();
 
 //const run = async () => {
   console.log("->> Locating images…");
@@ -24,7 +26,7 @@
   console.log("::set-output name=calibre_markdown::" + markdown)
 
   // If compress only mode, then we're done
-  if (compressOnly) {
+  if (config.compressOnly) {
     console.log("->> compressOnly was set. Stopping.");
     return results;
   }
