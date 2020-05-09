@@ -2,7 +2,7 @@
 //const processImages = require("./image-processing");
 //const createComment = require("./github-pr-comment");
 //const createCommit = require("./github-commit");
-const getConfig = require("./config");
+//const getConfig = require("./config");
 
 const run = async () => {
   //const config = await getConfig();
