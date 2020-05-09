@@ -5,7 +5,7 @@
 const getConfig = require("./config");
 const config = await getConfig();
 
-//const run = async () => {
+const run = async () => {
   console.log("->> Locating images…");
 
   /*const results = await processImages();
@@ -38,6 +38,7 @@ const config = await getConfig();
   //await createComment(markdown);
 
   return results;
-//};
+};
 
 //module.exports = run;
+run();
