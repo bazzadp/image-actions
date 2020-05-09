@@ -3,7 +3,7 @@
 //const createComment = require("./github-pr-comment");
 //const createCommit = require("./github-commit");
 
-const run = async () => {
+//const run = async () => {
   console.log("->> Locating images…");
 
   /*const results = await processImages();
@@ -36,7 +36,6 @@ const run = async () => {
   //await createComment(markdown);
 
   return results;
-};
+//};
 
 //module.exports = run;
-await run();
