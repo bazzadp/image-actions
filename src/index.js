@@ -26,7 +26,7 @@ const run = async () => {
   console.log("::set-output name=calibre_markdown::" + markdown)
 
   // If compress only mode, then we're done
-  if (config.compressOnly) {
+  if (true) { //config.compressOnly) {
     console.log("->> compressOnly was set. Stopping.");
     return results;
   }
