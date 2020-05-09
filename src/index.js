@@ -24,9 +24,10 @@ const run = async () => {
 
   console.log("->> Generating markdown…");
   //const markdown = await generateMarkdownReport(results);
-  const markdown = '"Test output\nTest Line2\n\nTest line4"'
+  const markdown = "Test output\nTest Line2\n\nTest line4";
+  const escaped_markdown = markdown.replace(/\%/g,'%25').replace(/\n/g,'%0A').replace(/\r/g,'%0D')
   //const markdown = "Hi again Barry"
-  console.log("::set-output name=calibre_markdown::" + markdown)
+  console.log("::set-output name=calibre_markdown::" + escaped_markdown)
   //core.setOutput("calibre_markdown", markdown);
 
   // If compress only mode, then we're done
