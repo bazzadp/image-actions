@@ -19,6 +19,7 @@ const run = async () => {
     console.log("::warning:: Nothing left to optimise. Stopping…");
     return;
   }*/
+  const results = true;
 
   console.log("->> Generating markdown…");
   //const markdown = await generateMarkdownReport(results);
