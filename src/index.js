@@ -3,6 +3,7 @@
 //const createComment = require("./github-pr-comment");
 //const createCommit = require("./github-commit");
 //const getConfig = require("./config");
+const core = require('@actions/core');
 
 const run = async () => {
   //const config = await getConfig();
