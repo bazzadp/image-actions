@@ -5,7 +5,7 @@
 const getConfig = require("./config");
 
 const run = async () => {
-  const config = await getConfig();
+  //const config = await getConfig();
   console.log("->> Locating images…");
 
   /*const results = await processImages();
