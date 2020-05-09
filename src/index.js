@@ -41,4 +41,4 @@ const run = async () => {
 };
 
 //module.exports = run;
-run();
+(async () => { await run(); })();
