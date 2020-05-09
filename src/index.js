@@ -3,7 +3,7 @@
 //const createComment = require("./github-pr-comment");
 //const createCommit = require("./github-commit");
 //const getConfig = require("./config");
-const core = require('@actions/core');
+//const core = require('@actions/core');
 
 const run = async () => {
   //const config = await getConfig();
@@ -24,8 +24,8 @@ const run = async () => {
 
   console.log("->> Generating markdown…");
   //const markdown = await generateMarkdownReport(results);
-  //const markdown = "Test output\nTest Line2\n\nTest line4"
-  const markdown = "Hi again Barry"
+  const markdown = '"Test output\nTest Line2\n\nTest line4"'
+  //const markdown = "Hi again Barry"
   //console.log("::set-output name=calibre_markdown::" + markdown)
   core.setOutput("calibre_markdown", markdown);
 
