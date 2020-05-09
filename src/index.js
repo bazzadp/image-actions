@@ -3,9 +3,9 @@
 //const createComment = require("./github-pr-comment");
 //const createCommit = require("./github-commit");
 const getConfig = require("./config");
-const config = await getConfig();
 
 const run = async () => {
+  const config = await getConfig();
   console.log("->> Locating images…");
 
   /*const results = await processImages();
