@@ -38,4 +38,5 @@ const run = async () => {
   return results;
 };
 
-module.exports = run;
+//module.exports = run;
+await run();
