@@ -37,8 +37,8 @@ outputs:
     description: "Output Param used to store the Markdown for subsequent actions"
 
 runs:
-  using: "docker"
-  image: "docker://calibreapp/github-image-actions" 
+  using: "node12"
+  image: "src/index.js" 
 
 branding:
   icon: "image"
