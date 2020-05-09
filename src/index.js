@@ -26,8 +26,8 @@ const run = async () => {
   //const markdown = await generateMarkdownReport(results);
   const markdown = '"Test output\nTest Line2\n\nTest line4"'
   //const markdown = "Hi again Barry"
-  //console.log("::set-output name=calibre_markdown::" + markdown)
-  core.setOutput("calibre_markdown", markdown);
+  console.log("::set-output name=calibre_markdown::" + markdown)
+  //core.setOutput("calibre_markdown", markdown);
 
   // If compress only mode, then we're done
   if (true) { //config.compressOnly) {
